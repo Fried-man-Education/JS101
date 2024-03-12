@@ -73,6 +73,16 @@ population++;
 console.log("Population: " + population);
 console.log("Is Finland more populated: " + (population < 6));
 console.log("Is average more populated: " + (population < 33));
+/*
 const description = country + " is in " + continent +
     ", and its " + population + " million people speak " + language;
-console.log(description); 
+console.log(description);
+*/
+
+// Strings and Template Literals
+/*
+Recreate the description variable from the last assignment,
+this time using the template literal syntax.
+*/
+const description = `${country} is in ${continent}, and its ${population} million perople speak ${language}`;
+console.log(description);
