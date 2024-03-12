@@ -99,10 +99,20 @@ population back to original.
 */
 
 if (population > 33) {
-    console.log(`${country}'s population is above average`);
+    //console.log(`${country}'s population is above average`);
 } else {
     console.log(
         `${country}'s population is ${33 - population} million
         below average`
     );
 }
+
+// Type Conversion and Coercion
+/*
+Predict the result of these 5 operations without executing them
+*/
+console.log('9' - '5'); // -> 4 (number)
+console.log('19' - '13' + '17'); // -> "617" (string)
+console.log('19' - '13' + 17); // -> 23 (number)
+console.log('123' < 57); // -> false (bool)
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143 (number)
