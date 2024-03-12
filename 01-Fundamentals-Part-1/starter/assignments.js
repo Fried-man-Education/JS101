@@ -170,5 +170,39 @@ make the condition true (unless you live in Canada :D).
 if (language == "English" && population < 50 && !isIsland) {
     console.log(`You should live in ${country} :)`);
 } else {
-    console.log(`${country} does not meet your criteria :(`);
+    // console.log(`${country} does not meet your criteria :(`);
+}
+
+// The switch Statement
+/*
+1. Use a switch statement to log the following string for 
+the given language:
+
+chinese or mandarin: 'MOST number of native speakers!';
+spanish: '2nd place in number of native speakers';
+english: '3rd place';
+hindi: 'Number 4';
+arabic: '5th most spoken language';
+for all other simply log 'Great language too :D'.
+*/
+
+switch (language) {
+    case ("Chinese"):
+    case ("Mandarin"):
+        console.log("MOST number of native speakers!");
+        break;
+    case("Spanish"):
+        console.log("2nd place in number of place speakers");
+        break;
+    case("English"):
+        console.log("3rd place");
+        break;
+    case ("Hindi"):
+        console.log("Number 4");
+        break;
+    case ("Arabic"):
+        console.log("5th most spoken langauge");
+        break;
+    default:
+        console.log("Great language too :D");
 }
