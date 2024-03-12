@@ -68,12 +68,12 @@ variable description which contains a string with this
 format: 'Portugal is in Europe, and its 11 million 
 people speak portuguese'.
 */
+/*
 console.log("Half population: " + (population / 2));
 population++;
 console.log("Population: " + population);
 console.log("Is Finland more populated: " + (population < 6));
 console.log("Is average more populated: " + (population < 33));
-/*
 const description = country + " is in " + continent +
     ", and its " + population + " million people speak " + language;
 console.log(description);
@@ -97,7 +97,6 @@ the country's population).
 to 13 and then to 130. See the different results, and set the 
 population back to original.
 */
-
 if (population > 33) {
     //console.log(`${country}'s population is above average`);
 } else {
@@ -111,8 +110,40 @@ if (population > 33) {
 /*
 Predict the result of these 5 operations without executing them
 */
+/*
 console.log('9' - '5'); // -> 4 (number)
 console.log('19' - '13' + '17'); // -> "617" (string)
 console.log('19' - '13' + 17); // -> 23 (number)
 console.log('123' < 57); // -> false (bool)
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143 (number)
+*/
+
+// Equality Operators: == vs. ===
+/*
+1. Declare a variable numNeighbours based on a prompt()
+2. If there is only 1 neighbour, log to the console 'Only 
+1 border!' (use loose equality == for now).
+3. Use an else-if block to log 'More than 1 border' in case
+numNeighbours is greater than 1.
+4. Use an else block to log 'No borders' (this block will be
+executed when numNeighbours is 0 or any other value).
+5. Test the code with different values of numNeighbours,
+including 1 and 0.
+6. Change == to ===, and test the code again, with the same
+values of numNeighbours. Notice what happens when there is 
+exactly 1 border! Why is this happening?
+7. Finally, convert numNeighbours to a number, and watch 
+what happens now when you input 1.
+8. Reflect on why we should use the === operator and type
+conversion in this situation.
+*/
+const numNeighbours = Number(
+    prompt('How many neighbour countries does your contry have?')
+);
+if (numNeighbours === 1) {
+    console.log("Only 1 border");
+} else if (numNeighbours > 1) {
+    console.log("More than 1 border");
+} else {
+    console.log("No border");
+}
