@@ -63,3 +63,16 @@ usaPerc = percentageOfWorld2(333);
 brazilPerc = percentageOfWorld2(100);
 ukPerc = percentageOfWorld2(80);
 console.log(usaPerc, brazilPerc, ukPerc);
+
+// Arrow Functions
+/*
+1. Recreate the last assignment, but this time 
+create an arrow function called percentageOfWorld3.
+*/
+
+const percentageOfWorld3 = population => population / 7900 * 100;
+usaPerc = percentageOfWorld3(333);
+brazilPerc = percentageOfWorld3(100);
+ukPerc = percentageOfWorld3(80);
+console.log(usaPerc, brazilPerc, ukPerc);
+
