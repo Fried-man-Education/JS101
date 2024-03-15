@@ -10,24 +10,12 @@ different countries. Store the returned values in 3
 different variables, and log them to the console.
 */
 function describeCountry(country, population, capitalCity) {
-    return `${country} has ${population} million people and its capital city is ${capitalCity}`
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 }
 
-const usa = describeCountry(
-    "USA",
-    333,
-    "Washington"
-);
-const brazil = describeCountry(
-    "Brazil",
-    100,
-    "La Paz"
-);
-const uk = describeCountry(
-    "UK",
-    80,
-    "London"
-);
+const usa = describeCountry("USA", 333, "Washington");
+const brazil = describeCountry("Brazil", 100, "La Paz");
+const uk = describeCountry("UK", 80, "London");
 // console.log(usa, brazil, uk);
 
 // Function Declarations vs. Expressions
@@ -47,8 +35,8 @@ to the console.
 thing, called percentageOfWolrd2, and also call it with 3 
 country populations (can be the same populations).
 */
-function percentageOfWorld1 (population) {
-    return population / 7900 * 100;
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
 }
 
 let usaPerc = percentageOfWorld1(333);
@@ -57,7 +45,7 @@ let ukPerc = percentageOfWorld1(80);
 // console.log(usaPerc, brazilPerc, ukPerc);
 
 let percentageOfWorld2 = function (population) {
-    return population / 7900 * 100;
+  return (population / 7900) * 100;
 };
 usaPerc = percentageOfWorld2(333);
 brazilPerc = percentageOfWorld2(100);
@@ -69,7 +57,7 @@ ukPerc = percentageOfWorld2(80);
 1. Recreate the last assignment, but this time 
 create an arrow function called percentageOfWorld3.
 */
-const percentageOfWorld3 = population => population / 7900 * 100;
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
 usaPerc = percentageOfWorld3(333);
 brazilPerc = percentageOfWorld3(100);
 ukPerc = percentageOfWorld3(80);
@@ -87,8 +75,10 @@ percentageOfWorld1 you created earlier.
 3. Call describePopulation with data for 3 countries of 
 your choice.
 */
-const describePopulation = (country, population) => 
-`${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world`;
+const describePopulation = (country, population) =>
+  `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world`;
 
 console.log(describePopulation("USA", 333));
 console.log(describePopulation("Brazil", 100));

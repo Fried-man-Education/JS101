@@ -33,9 +33,9 @@ Note: Don't round the BMI values. Leave them as they are.
 👋 OPTIONAL: You can watch my solution in video format in the next lecture
 */
 if (BMIMark > BMIJohn) {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 } else {
-    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
 
 // CHALLENGE #3
@@ -54,11 +54,11 @@ const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
 
 if (scoreDolphins > scoreKoalas) {
-    console.log("Dolphins win the trophy");
+  console.log("Dolphins win the trophy");
 } else if (scoreKoalas > scoreDolphins) {
-    console.log("Koalas win the trophy");
+  console.log("Koalas win the trophy");
 } else {
-    console.log("Both win the trophy");
+  console.log("Both win the trophy");
 }
 
 // CHALLENGE #4
@@ -71,5 +71,7 @@ Example: The bill was 275, the tip was 41.25, and the total value 316.25.
 Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
 */
 const bill = 275;
-const tip = bill * (bill >= 50 && bill <= 300 ?  0.15 : 0.2);
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+const tip = bill * (bill >= 50 && bill <= 300 ? 0.15 : 0.2);
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);

@@ -23,7 +23,7 @@ language, but don't assign it any value yet.
 2. Log the types of isIsland, population, country 
 and language to the console.
 */
-const isIsland = false
+const isIsland = false;
 let language;
 /*console.log(
     "isIsland type: " + (typeof isIsland) +
@@ -98,12 +98,12 @@ to 13 and then to 130. See the different results, and set the
 population back to original.
 */
 if (population > 33) {
-    //console.log(`${country}'s population is above average`);
+  //console.log(`${country}'s population is above average`);
 } else {
-    console.log(
-        `${country}'s population is ${33 - population} million
+  console.log(
+    `${country}'s population is ${33 - population} million
         below average`
-    );
+  );
 }
 
 // Type Conversion and Coercion
@@ -168,9 +168,9 @@ go back and temporarily change some variables in order to
 make the condition true (unless you live in Canada :D).
 */
 if (language == "English" && population < 50 && !isIsland) {
-    console.log(`You should live in ${country} :)`);
+  console.log(`You should live in ${country} :)`);
 } else {
-    // console.log(`${country} does not meet your criteria :(`);
+  // console.log(`${country} does not meet your criteria :(`);
 }
 
 // The switch Statement
@@ -187,24 +187,24 @@ for all other simply log 'Great language too :D'.
 */
 
 switch (language) {
-    case ("Chinese"):
-    case ("Mandarin"):
-        console.log("MOST number of native speakers!");
-        break;
-    case("Spanish"):
-        console.log("2nd place in number of place speakers");
-        break;
-    case("English"):
-        // console.log("3rd place");
-        break;
-    case ("Hindi"):
-        console.log("Number 4");
-        break;
-    case ("Arabic"):
-        console.log("5th most spoken langauge");
-        break;
-    default:
-        console.log("Great language too :D");
+  case "Chinese":
+  case "Mandarin":
+    console.log("MOST number of native speakers!");
+    break;
+  case "Spanish":
+    console.log("2nd place in number of place speakers");
+    break;
+  case "English":
+    // console.log("3rd place");
+    break;
+  case "Hindi":
+    console.log("Number 4");
+    break;
+  case "Arabic":
+    console.log("5th most spoken langauge");
+    break;
+  default:
+    console.log("Great language too :D");
 }
 
 // The Conditional (Ternary) Operator
@@ -219,7 +219,5 @@ to 13 and then to 130. See the different results, and set the
 population back to original.
 */
 console.log(
-    `${country}'s population is ${
-        population > 33 ? "above" : "below"
-    } average`
+  `${country}'s population is ${population > 33 ? "above" : "below"} average`
 );
