@@ -128,7 +128,7 @@ let neighbours = ["Canada", "Mexico"];
 neighbours.push("Utopia");
 neighbours.pop();
 if (!neighbours.includes("Germany")) {
-  console.log("Probably not a central european country :D");
+  // console.log("Probably not a central european country :D");
 }
 neighbours[neighbours.indexOf("Canada")] = "Republic of Canada";
 
@@ -154,8 +154,31 @@ this to the console: 'Finland has 6 million finnish-speaking people,
 2. Increase the country's population by two million using dot notation, 
 and then decrease it by two million using bracket notation.
 */
-console.log(
+/*console.log(
   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
 );
+*/
 myCountry.population += 2;
 myCountry["population"] -= 2;
+
+// Object Methods
+/*
+1. Add a method called describe to the myCountry object. This method 
+will log a string to the console, similar to the string logged in the 
+previous assignment, but this time using the 'this' keyword.
+2. Call the describe method.
+3. Add a method called checkIsland to the myCountry object. This method 
+will set a new property on the object, called isIsland. isIsland will be 
+true if there are no neighbouring countries, and false if there are. Use 
+the ternary operator to set the property.
+*/
+myCountry["describe"] = function () {
+  console.log(
+    `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`
+  );
+};
+
+myCountry.describe();
+myCountry.checkIsland = function () {
+  this.isIsland = this.neighbours.length == 0 ? true : false;
+};
